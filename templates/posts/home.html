@@ -1,0 +1,42 @@
+<!--
+BLOGLY by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+-->
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>BLOGLY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://angeldollface.art/assets/css/dollfonts.css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+  
+ </head>
+ <body>
+
+  <img class="pfp" src="{% static 'images/logo.jpg' %}"/>
+   
+  {% if posts %}
+  {% for post in posts %}
+  <div class="post">
+   <h2 class="title">{{ post.title }}</h2>
+   <p class="date">{{ post.date }}</p>
+   <hr class="divider"/>
+   <p class="description">{{ post.description }}</p>
+   <hr class="divider"/>
+   <p class="link">
+    <a class="link" href="{% url 'posts:post' pk=post.pk %}">READ</a>
+   </p>
+  </div>
+  {% endfor %}
+  {% else %}
+  <div class="post">
+    <h2 class="title">No posts yet!</h2>
+    <p class="date">0/0/0 00:00</p>
+    <hr class="divider"/>
+    <p class="link">No posts have been created yet!</p>
+   </div>
+  {% endif %}
+ </body>
+</html>

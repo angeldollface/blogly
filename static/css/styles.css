@@ -1,0 +1,190 @@
+/*
+BLOGLY by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
+/* GENERAL SECTION START. */
+html {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: repeating-linear-gradient(
+        135deg,
+        #FFFFFF,
+        #FFFFFF 10px,
+        #000000 10px,
+        #000000 20px
+    );
+}
+/* GENERAL SECTION END. */
+
+/* DESKTOP SECTION START. */
+img.pfp {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 200px;
+    box-shadow: 1px 2px 15px #080808;
+    height: 200px;
+    border: 3px solid #000000;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+div.post {
+    border-radius: 15px;
+    order: none;
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 15px #080808;
+    width: 80%;
+    padding: 0px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+h2.title {
+    text-align: left;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 35px;
+    font-family: 'VT323';
+    color: #000000;
+}
+p.date {
+    text-align: left;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'FiraCode-Regular';
+    color: #000000;
+}
+p.description {
+    text-align: left;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: 'MC';
+    color: #000000;
+}
+p.link {
+    text-align: left;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: 'MC';
+    color: #000000;    
+}
+a.link {
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: 'VT323';
+    color: #000000;    
+    transition-duration: 0.6s;
+}
+a.link:hover {
+    color: #808080;    
+}
+hr.divider {
+    width: 100%;
+    background-color: #000000;
+    height: 3px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+p.body {
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: 'MC';
+    color: #000000;    
+}
+/* DESKTOP SECTION END. */
+
+/* RESPONSIVE SECTION START. */
+@media screen and (max-width: 800px){
+    img.pfp {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    div.post {
+        width: 90%;
+        border-radius: 10px;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    h2.title {
+        text-align: left;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 30px;
+    }
+    p.date {
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 0px;
+        font-size: 15px;
+    }
+    p.description {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+    p.link {
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    a.link {
+        font-size: 25px;
+    }  
+    p.body {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+}
+/* RESPONSIVE SECTION END. */
