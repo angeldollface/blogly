@@ -43,7 +43,7 @@ cd blogly
 python3 -m venv .
 ```
 
-- 5.) Activate the virtual environment:
+- 5.) Activate the virtual environment (The command below is for `*nix` systems. Do the equivalent for this on Windows.):
 
 ```bash
 source bin/activate
