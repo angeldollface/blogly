@@ -58,34 +58,46 @@ python -m pip install -r requirements.txt
 - 7.) Setup the database migrations:
 
 ```bash
-python manage.py --run-syncdb
+python manage.py migrate
 ```
 
-- 8.) Setup a superuser account:
+- 8.) Setup the database migrations for the `posts` app:
+
+```bash
+python manage.py makemigrations posts
+```
+
+- 9.) Re-apply the new migrations:
+
+```bash
+python manage.py migrate
+```
+
+- 10.) Setup a superuser account:
 
 ```bash
 python manage.py createsuperuser
 ```
 
-- 9.) Run the local development server:
+- 11.) Run the local development server:
 
 ```bash
 python manage.py runserver
 ```
 
-- 10.) Visit the address on which the local server is running and add `/admin` to the end of that URL.
+- 11.) Visit the address on which the local server is running and add `/admin` to the end of that URL.
 
-- 11.) Login.
+- 12.) Login.
 
-- 12.) Click the `+` next to the `Posts` text.
+- 13.) Click the `+` next to the `Posts` text.
 
-- 13.) Write a blog post.
+- 14.) Write a blog post.
 
-- 14.) Logout.
+- 15.) Logout.
 
-- 15.) Go back to the root address.
+- 16.) Go back to the root address.
 
-- 16.) Behold your post!
+- 17.) Behold your post!
 
 
 ## CHANGELOG :black_nib:
